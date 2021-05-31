@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rice page</title>
+    
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/rice.css') }}">
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" 
+        rel="stylesheet"  type='text/css'>  
+</head>
+<body>
+
+    <header>
+        <a class="logo" href="/"><img src="images/logo.svg" alt="logo"></a>
+        <nav>
+            <ul class="nav__links">
+                <li><a href="/">Home</a></li>
+                <li><a href="#">Code</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+        <a class="cta" href="#">Contact</a>
+    </header>
+
+
+    <div class="card">
+        <div class="blog-post">
+            <div class="blog-post-img">
+                
+                <img src='/static/styles/images/rice.jpg' alt="">
+            </div>
+            <h2 class="blog-post-title">Suitable crop for your agricultural land is</h2>
+            <h1 class="Predicted-crop">Rice
+            </h1>
+            <p class="blog-post-text"> In India, West Bengal is the largest rice producing state. Paddy fields are a common sight throughout India, both in the northern Gangetic Plains and the southern peninsular plateaus. Paddy is cultivated at least twice a year in most parts of India, the two seasons being known as Rabi and Kharif respectively.India is the second largest producing country in the world. </p>
+            <a href="https://en.wikipedia.org/wiki/Rice" class="blog-post-cta">Read more</a>
+        </div>
+    </div>
+
+    <div class="img-1">
+        <h1 class="img-1-t">Historical price data of rice</h1>
+        <img src="/static/styles/images/Rice_plot1.jpg" alt="">
+    </div>
+
+
+    <div class="img-2">
+        <h1 class="img-2-t">Predicted price of rice for next 6 months</h1>
+        <img src="/static/styles/images/Rice2.jpg" alt="">
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <h3>Farmers Amigo</h3>
+            <p>A friend of farmer which help them to get more yeild of crops and maximize their profits.</p>
+            <ul class="socials">
+                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+            </ul>
+        </div>
+
+        <div class="footer-bottom">
+            <p>copyright &copy;2020 famer's Amigo. designed by <span>mohan sai mandalapu</span></p>
+        </div>
+    </footer>
+
+</body>
+</html>

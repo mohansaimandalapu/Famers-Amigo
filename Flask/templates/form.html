@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form-page</title>
+    <link rel="stylesheet" href="fstyles.css">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/fstyles.css') }}"> 
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" 
+        rel="stylesheet"  type='text/css'> 
+</head>
+<body>
+
+    <header>
+        <a class="logo" href="/"><img src="images/logo.svg" alt="logo"></a>
+        <nav>
+            <ul class="nav__links">
+                <li><a href="/">Home</a></li>
+                <li><a href="#">Code</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+        <a class="cta" href="#">Contact</a>
+    </header>
+
+    <div class="card">
+        <div class="card-image"></div>
+        <div class="card-text">
+          
+          <h2>Prediction of crop</h2>
+          <p>Agriculture in India plays a predominant role in economy and employment. The common problem existing among the Indian farmers are they don't choose the right crop based on their soil requirements. Due to this they face a serious setback in productivity. This problem of the farmers has been addressed through precision agriculture. Precision agriculture is a modern farming technique that uses research data of soil characteristics, soil types, crop yield data collection and suggests the farmers the right crop based on their site-specific parameters. This reduces the wrong choice on a crop and increase in productivity.
+          </p>
+        </div>
+        <div class="card-stats">
+          <div class="stat">
+            <div class="value">25.7°C</div>
+            <div class="type">Avg temp in india</div>
+          </div>
+          <div class="stat border">
+            <div class="value">120cm</div>
+            <div class="type">Avg rainfall in india</div>
+          </div>
+          <div class="stat">
+            <div class="value">60%</div>
+            <div class="type">of land in india belongs to Agriculture</div>
+          </div>
+        </div>
+      </div>
+
+
+      <h1 class="Main-title"> Enter your soil composition values</h1>
+
+
+    <form action="{{ url_for('predict') }}" method="post">
+      <div class="box1-t">
+          <h2>NITROGEN</h2>
+      </div>
+      <div class="box1">
+
+          <input type="text" class="N" name="N" required = 'required'>
+          <span>Enter values between 100-150</span>
+      </div>
+
+
+    <div class="box2-t">
+        <h2>PHOSPHORUS</h2>
+    </div>
+    <div class="box2">
+        <input type="text" class="N" name="P" required = 'required'>
+        <span>Enter values between 100-150</span>
+    </div>
+
+
+    <div class="box3-t">
+        <h2>POTASSIUM</h2>
+    </div>
+    <div class="box3">
+        <input type="text" class="N" name="K" required = 'required'>
+        <span>Enter values between 100-150</span>
+    </div>
+
+
+    <div class="box4-t">
+        <h2>TEMPERATURE</h2>
+    </div>
+    <div class="box4">
+        <input type="text" class="N" name="T" required = 'required'>
+        <span>Enter values between 100-150</span>
+    </div>
+
+    <div class="box5-t">
+        <h2>HUMIDITY</h2>
+    </div>
+    <div class="box5">
+        <input type="text" class="N" name="H" required = 'required'>
+        <span>Enter values between 100-150</span>
+    </div>
+
+    <div class="box6-t">
+        <h2>pH</h2>
+    </div>
+    <div class="box6">
+        <input type="text" class="N" name="P" required = 'required'>
+        <span>Enter values between 100-150</span>
+    </div>
+
+    <div class="box7-t">
+        <h2>RAINFALL</h2>
+    </div>
+    <div class="box7">
+        <input type="text" class="N" name="R" required = 'required'>
+        <span>Enter values between 100-150</span>
+    </div>
+
+    
+    <button type="submit"  class="blog-post-cta" value="Submit">Submit</button>
+
+    
+    </form>
+
+    <footer>
+        <div class="footer-content">
+            <h3>Framers Amigo</h3>
+            <p>A friend of farmer which help them to get more yeild of crops and maximize their profits.</p>
+            <ul class="socials">
+                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+            </ul>
+        </div>
+
+        <div class="footer-bottom">
+            <p>copyright &copy;2020 famer's Amigo. designed by <span> mohan sai mandalapu</span></p>
+        </div>
+    </footer>
+
+</body>
+</html>

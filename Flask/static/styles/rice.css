@@ -1,0 +1,301 @@
+body{
+    position: relative;
+    height: 260vh;
+}
+
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+}
+
+img{
+    width: 100%;
+}
+
+
+.card{
+    /* other default style */
+    position: absolute;
+    right: 400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: 1fr 6fr 1fr;
+  }
+
+
+.blog-post{
+
+    grid-row: 2/4;
+    grid-column: 2/4;
+    width: 100%;
+    max-width: 98rem;
+    padding: 5rem;
+    background-color: #fff;
+    box-shadow: 0 1.4rem 8rem rgba(0, 0, 0,.2); 
+    display: flex;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: .8rem;
+
+}
+
+.blog-post-img{
+    min-width: 35rem;
+    max-width: 3rem;
+    height: 30rem;
+    transform: translate(-8rem);
+    position: relative;
+}
+
+.blog-post-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: .8rem;
+}
+
+.blog-post-img::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    box-shadow: .5rem .5rem 3rem 1px rgba(0, 0, 0,.05);
+    border-radius: .8rem;
+}
+
+.blog-post-title{
+    position: absolute;
+    text-transform: uppercase;
+    top: 14%;
+    right: 10%;
+    display: block;
+    font-size: 2rem;
+    margin: 1.5rem 0 2rem;
+    color: #000;
+
+}
+
+.Predicted-crop{
+    position: absolute;
+    text-transform: uppercase;
+    top: 20%;
+    right: 30%;
+    font-size: 3.5rem;
+}
+
+
+.blog-post-text{
+    display: block;
+    margin-bottom: 1;
+    font-size: 2rem;
+    text-align: center;
+    color: rgba(0,0,0,.7);
+}
+
+.blog-post-cta{
+    position: absolute;
+    right: 30%;
+    bottom: 4%;
+    display: inline-block;
+    padding: 1.5rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 1.2rem;
+    background-image: linear-gradient(to right, #000 , #484848 100%);
+    border-radius: .8rem;
+    text-decoration: none;
+
+}
+
+.blog-post-cta:hover{
+    background-image: linear-gradient(to right, #484848 , #000 100%);
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    
+    
+    ;
+}
+  
+.logo {
+cursor: pointer;
+order: 3;
+margin-left: auto;
+}
+
+nav {
+order: 1;
+}
+
+.nav__links a,
+.cta,
+.overlay__content a {
+font-family: "Montserrat", sans-serif;
+font-weight: 700;
+color: black;
+text-decoration: none;
+}
+
+.nav__links {
+list-style: none;
+display: flex;
+font-size: 16px;
+}
+
+.nav__links li {
+padding: 0px 20px;
+}
+
+.nav__links li:nth-child(1) {
+padding: 0 20px 0 0;
+}
+
+.nav__links li a {
+transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+color: #FAA427;
+}
+
+.cta {
+order: 2;
+margin-left: 20px;
+padding: 9px 25px;
+background-color: #FAA427;
+border: none;
+border-radius: 50px;
+cursor: pointer;
+transition: all 0.3s ease 0s;
+}
+
+.cta:hover {
+background-color: rgba(255, 166, 0, 0.884);
+}
+
+footer{
+background-color: #111;
+height: auto;
+width: 100vw;
+font-family:"Open Sans";
+padding-top: 40px;
+color: #ffffff;
+position: absolute;
+bottom: 0;
+left: 0;
+right: 0;
+
+}
+
+.footer-content{
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+text-align: center;
+}
+
+.footer-content h3{
+font-size: 1.8rem;
+font-weight: 400;
+text-transform: capitalize;
+line-height: 3rem;
+}
+
+.footer-content p{
+max-width: 500px;
+margin: 10px auto;
+line-height: 28px;
+font-size: 16px;
+}
+
+.socials{
+list-style: none;
+display: flex;
+align-items: center;
+justify-content: center;
+margin: 1rem 0 3rem 0;
+}
+
+.socials li{
+margin: 0 10px;
+}
+
+.socials a{
+text-decoration: none;
+color: #ffffff;
+}
+
+.socials a i {
+font-size: 1.8rem;
+transition: color .4s ease;
+}
+
+.socials a:hover{
+color: aqua;
+}
+
+.footer-bottom{
+background-color: #000;
+width: 100vw;
+padding: 20px 0;
+text-align: center;
+}
+
+.footer-bottom p{
+font-size:14px;
+word-spacing: 2px;
+text-transform: capitalize;
+}
+
+.footer-bottom span{
+text-transform: uppercase;
+opacity: .4;
+font-weight: 200;
+}
+
+
+.img-1{
+    position: absolute;
+    width: 200vh;
+    bottom: 45%;
+}
+
+.img-2{
+    position: absolute;
+    width: 200vh;
+    bottom: 15%;
+}
+
+
+.img-1-t{
+    position: absolute;
+    right: 33%;
+    top: -8%;
+    font-size: 40px;
+}
+
+
+.img-2-t{
+    position: absolute;
+    right: 25%;
+    top: -8%;
+    font-size: 40px;
+}

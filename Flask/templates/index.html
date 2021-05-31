@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Navbar</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+        <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/styles.css') }}">       
+         
+        <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" 
+        rel="stylesheet"  type='text/css'>  
+
+    </head>
+
+    <body>
+        <header>
+            <a class="logo" href="/"><img src="images/logo.svg" alt="logo"></a>
+            <nav>
+                <ul class="nav__links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Code</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </nav>
+            <a class="cta" href="#">Contact</a>
+        </header>
+
+        <div class="hero-image">
+            <div class="hero-text">
+              <h1>ENCHIRIDION OF AN AGRICULTURE</h1>
+              
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="card">
+                <a href="/features">
+                    <span class="link"></span>
+
+
+                <div class="face face1">
+                    
+                    <div class="content">
+                        <img src="/static/styles/images/b1.jpeg"/>
+                    </div>
+                </div>
+                <div class="face face2">
+                    <div class="content">
+                        <h3>
+                            FEATURES
+                        </h3>
+                        <p>Know the importent features that are used for the prediction of the crop.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                
+                <a href="/form">
+                    <span class="link"></span>
+
+                <div class="face face1">
+                    <div class="content">
+                        <img src="/static/styles/images/preiction2.jpg"/>
+                        
+                    </div>
+                </div>
+                <div class="face face2">
+                    
+                    <div class="content">
+                        <h3>
+                            PREDICTION
+                        </h3>
+                        <p>Give us values of your Soil composition in return you will get the suitable crop name for your agricultural land.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+               
+                
+                <a href="https://datastudio.google.com/s/msTpfsa52TY"> 
+                    <span class="link"></span>
+
+                <div class="face face1">
+                    <div class="content">
+                        <img src="/static/styles/images/df.jpg">
+                    </div>
+                </div>
+                <div class="face face2">
+                    
+                    <div class="content">
+                        <h3>
+                            DASHBOARD
+                        </h3>
+                        <p>Click here to enter an intractive dashboard which contains information about crops.</p>
+                    </div>
+                </a>
+                </div>
+            </div>
+        </div>
+
+
+        
+        <footer>
+        <div class="footer-content">
+            <h3>Farmers Amigo</h3>
+            <p>A friend of farmer which help them to get more yeild of crops and maximize their profits.</p>
+            <ul class="socials">
+                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+            </ul>
+        </div>
+
+        <div class="footer-bottom">
+            <p>copyright &copy;2020 famer's Amigo. designed by <span>mohan sai mandalapu</span></p>
+        </div>
+    </footer>
+
+    </body>
+</html>
+
+
