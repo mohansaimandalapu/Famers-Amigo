@@ -1,7 +1,7 @@
 from flask import Flask,render_template,request
 import pickle
 import numpy as np
-from crop_dic import cd
+from crop_descritption_map import cd
 
 
 app = Flask(__name__)
