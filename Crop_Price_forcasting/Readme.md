@@ -5,7 +5,7 @@
 
 
 ## Aim:
-- To forecast the price of the crop that recommended by the Crop Prediction model](https://github.com/mohansaimandalapu/MachineLearningProjects/tree/main/Agriculture%20Project/Crop_Identification).
+- To forecast the price of the crop that recommended by the [Crop Prediction model](https://github.com/mohansaimandalapu/Famers-Amigo/tree/main/Crop_Identification).
 
 
 ## Data:

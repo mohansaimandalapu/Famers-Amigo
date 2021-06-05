@@ -2,7 +2,6 @@ body{margin: auto;
   position: relative;
   min-height: 180vh; 
  font-family: 'Allan';
- background-color: rgb(214, 208, 208);
  
 
   
@@ -23,10 +22,16 @@ header {
 }
 
 .logo {
+  position: absolute;
+  border: transparent;
+  right: 40px;
+  top: -10px;
   cursor: pointer;
   order: 3;
   margin-left: auto;
+  background: transparent;
 }
+
 
 nav {
   order: 1;
@@ -64,6 +69,8 @@ nav {
 }
 
 .cta {
+  position: absolute;
+  left: 350px;
   order: 2;
   margin-left: 20px;
   padding: 9px 25px;
@@ -298,4 +305,10 @@ footer{
   left: 100px;
   top: 0px;
   text-shadow: #FAA427;
+}
+
+.text{
+  position: absolute;
+  right: 30%;
+  top: 60px;
 }

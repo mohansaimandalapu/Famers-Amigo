@@ -1,7 +1,10 @@
 # Crop Recommendation model:
 
 ## Problem:
-- The common problem existing among the Indian farmers is they don’t choose the right crop based on their soil requirements. Due to this, they face a serious setback in productivity. if they can choose the right crop for the cultivation based on soil and environmental factors yield of the crop will be increases and farmers can get better profits. 
+- The common problem existing among the Indian farmers is they don’t choose the right crop based on their soil requirements. Due to this, they face a serious setback in crop yeild. if they can choose the right crop for the cultivation based on soil and environmental factors yield of the crop will be increases and farmers can get better profits. As shown in the below flowchart by fitting the features or the soil composition values into machine learning model you have to get the suitable crop for the famer's that can increase their crop yeild. 
+
+
+- <img src="images/problem-statement.jpeg">
 
 ## Aim:
 - The main aim of the project is to analyze the main features to predict the crop and help farmer's in predicting the right crop for their land.
@@ -22,7 +25,7 @@
 
 
 ## Data cleaning:
-- checking outiers for each class level and there are no outliers present in the data.
+- checking outiers for each feature class level and there are no outliers present in the data.
 - Added Type_of_soil column based on the ph values for analysis purpose.
 - Cheking for null values and there are no null values or missing values in the data.
 
